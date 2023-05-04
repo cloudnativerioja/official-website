@@ -20,9 +20,15 @@ jobs:
           node-version: 16
           cache: npm
       # In export script, we use `next export` to generate static HTML files in the out directory.
-      - name: Build
+      - name: Install dependencies and build
         run: |
-          npm ci
+          if [ -e yarn.lock ]; then
+            yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+            npm ci
+          else
+            npm i
+          fi
           npm run build
           npm run export
           touch out/.nojekyll
