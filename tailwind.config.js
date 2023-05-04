@@ -8,6 +8,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class", // or 'media' or 'class'
+  images: {
+    domains: ["raw.githubusercontent.com"],
+  },
   theme: {
     extend: {
       colors: {

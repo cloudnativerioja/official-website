@@ -18,7 +18,7 @@ const Navbar = () => {
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <Image
-                        src="https://raw.githubusercontent.com/cncf/artwork/master/other/cncf/horizontal/color/cncf-color.svg"
+                        src="/img/logo.svg"
                         alt="N"
                         width="130"
                         height="50"
@@ -65,10 +65,11 @@ const Navbar = () => {
                       </Link>
                     ))}
                     <Link
-                      href="/"
-                      className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                      href="https://community.cncf.io/cloud-native-rioja/"
+                      target="_blank"
+                      className="w-full px-6 py-2 mt-3 text-center text-white bg-cncf rounded-md lg:ml-5"
                     >
-                      Get Started
+                      Agenda
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -95,10 +96,11 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
-            href="/"
-            className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+            href="https://community.cncf.io/cloud-native-rioja/"
+            target="_blank"
+            className="px-6 py-2 text-white bg-cncf rounded-md md:ml-5"
           >
-            Get Started
+            Agenda
           </Link>
 
           <ThemeChanger />
