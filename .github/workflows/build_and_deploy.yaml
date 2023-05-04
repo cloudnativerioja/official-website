@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [main, feat/nextjs-landing]
+    branches: [master, feat/nextjs-landing]
 
 jobs:
   build:
