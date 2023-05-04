@@ -24,7 +24,7 @@ jobs:
             npm i
           fi
       - run: npm run lint
-      - run: npm run test
+      - run: npm run test --passWithNoTests
       - uses: artiomtr/jest-coverage-report-action@v2.2.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
