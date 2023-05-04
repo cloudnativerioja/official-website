@@ -4,7 +4,7 @@
   "description": "Nextly Landing Page Template",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
