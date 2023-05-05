@@ -8,7 +8,6 @@ const PopupWidget = () => {
     register,
     handleSubmit,
     reset,
-    control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm({
     mode: 'onTouched',
