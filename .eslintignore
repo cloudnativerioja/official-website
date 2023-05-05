@@ -1,0 +1,6 @@
+tailwind.config.js
+node_modules
+.next
+.serverless
+.serverless_nextjs
+out
