@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { useForm, useWatch } from "react-hook-form";
-import { Disclosure, Transition } from "@headlessui/react";
+import React, { useState } from 'react';
+import { useForm, useWatch } from 'react-hook-form';
+import { Disclosure, Transition } from '@headlessui/react';
 
 const PopupWidget = () => {
   const {
@@ -10,20 +10,20 @@ const PopupWidget = () => {
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm({
-    mode: "onTouched",
+    mode: 'onTouched',
   });
   const [isSuccess, setIsSuccess] = useState(false);
-  const [Message, setMessage] = useState("");
+  const [Message, setMessage] = useState('');
 
-  const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
+  const userName = useWatch({ control, name: 'name', defaultValue: 'Someone' });
 
   const onSubmit = async (data, e) => {
     console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
+    await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
       },
       body: JSON.stringify(data, null, 2),
     })
@@ -41,7 +41,7 @@ const PopupWidget = () => {
       })
       .catch((error) => {
         setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
+        setMessage('Client Error. Please check the console.log for more info');
         console.log(error);
       });
   };
@@ -74,7 +74,7 @@ const PopupWidget = () => {
                   strokeLinejoin="round"
                 >
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                </svg>{" "}
+                </svg>{' '}
               </Transition>
 
               <Transition
@@ -99,7 +99,7 @@ const PopupWidget = () => {
                 >
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>{" "}
+                </svg>{' '}
               </Transition>
             </Disclosure.Button>
             <Transition
@@ -122,23 +122,23 @@ const PopupWidget = () => {
                       <input
                         type="hidden"
                         value="YOUR_ACCESS_KEY_HERE"
-                        {...register("apikey")}
+                        {...register('apikey')}
                       />
                       <input
                         type="hidden"
                         value={`${userName} sent a message from Nextly`}
-                        {...register("subject")}
+                        {...register('subject')}
                       />
                       <input
                         type="hidden"
                         value="Nextly Template"
-                        {...register("from_name")}
+                        {...register('from_name')}
                       />
                       <input
                         type="checkbox"
                         className="hidden"
-                        style={{ display: "none" }}
-                        {...register("botcheck")}
+                        style={{ display: 'none' }}
+                        {...register('botcheck')}
                       ></input>
 
                       <div className="mb-4">
@@ -152,14 +152,14 @@ const PopupWidget = () => {
                           type="text"
                           id="full_name"
                           placeholder="John Doe"
-                          {...register("name", {
-                            required: "Full name is required",
+                          {...register('name', {
+                            required: 'Full name is required',
                             maxLength: 80,
                           })}
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.name
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-cncf ring-indigo-100"
+                              ? 'border-red-600 focus:border-red-600 ring-red-100'
+                              : 'border-gray-300 focus:border-cncf ring-indigo-100'
                           }`}
                         />
                         {errors.name && (
@@ -179,18 +179,18 @@ const PopupWidget = () => {
                         <input
                           type="email"
                           id="email"
-                          {...register("email", {
-                            required: "Enter your email",
+                          {...register('email', {
+                            required: 'Enter your email',
                             pattern: {
                               value: /^\S+@\S+$/i,
-                              message: "Please enter a valid email",
+                              message: 'Please enter a valid email',
                             },
                           })}
                           placeholder="you@company.com"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.email
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-cncf ring-indigo-100"
+                              ? 'border-red-600 focus:border-red-600 ring-red-100'
+                              : 'border-gray-300 focus:border-cncf ring-indigo-100'
                           }`}
                         />
 
@@ -212,14 +212,14 @@ const PopupWidget = () => {
                         <textarea
                           rows="4"
                           id="message"
-                          {...register("message", {
-                            required: "Enter your Message",
+                          {...register('message', {
+                            required: 'Enter your Message',
                           })}
                           placeholder="Your Message"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-cncf ring-indigo-100"
+                              ? 'border-red-600 focus:border-red-600 ring-red-100'
+                              : 'border-gray-300 focus:border-cncf ring-indigo-100'
                           }`}
                           required
                         ></textarea>
@@ -256,7 +256,7 @@ const PopupWidget = () => {
                               ></path>
                             </svg>
                           ) : (
-                            "Send Message"
+                            'Send Message'
                           )}
                         </button>
                       </div>
@@ -265,7 +265,7 @@ const PopupWidget = () => {
                         id="result"
                       >
                         <span>
-                          Powered by{" "}
+                          Powered by{' '}
                           <a
                             href="https://Web3Forms.com"
                             className="text-gray-600"

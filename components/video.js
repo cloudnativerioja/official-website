@@ -1,6 +1,6 @@
-import { useState } from "react";
-import Container from "./container";
-import React from "react";
+import { useState } from 'react';
+import Container from './container';
+import React from 'react';
 const Video = () => {
   const [playVideo, setPlayVideo] = useState(false);
   return (

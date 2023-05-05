@@ -1,5 +1,5 @@
-import React from "react";
-import Container from "./container";
+import React from 'react';
+import Container from './container';
 
 const Cta = () => {
   return (

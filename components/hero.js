@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Container from "./container";
-import React from "react";
+import Image from 'next/image';
+import Container from './container';
+import React from 'react';
 const Hero = () => {
   return (
     <>
