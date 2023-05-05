@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, useWatch } from 'react-hook-form';
 import { Disclosure, Transition } from '@headlessui/react';
+import { WEB3FORMS_API_KEY } from '../app.config';
 
 const PopupWidget = () => {
   const {
@@ -51,7 +52,7 @@ const PopupWidget = () => {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="fixed z-40 flex items-center justify-center transition duration-300 bg-indigo-500 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-cncf focus:bg-cncf ease">
+            <Disclosure.Button className="fixed z-40 flex items-center justify-center transition duration-300 bg-cncf rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-cncf focus:bg-cncf ease">
               <span className="sr-only">Open Contact form Widget</span>
               <Transition
                 show={!open}
@@ -121,17 +122,17 @@ const PopupWidget = () => {
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
                         type="hidden"
-                        value="YOUR_ACCESS_KEY_HERE"
+                        value={WEB3FORMS_API_KEY}
                         {...register('apikey')}
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
+                        value={`New message from Cloud Native Rioja Website`}
                         {...register('subject')}
                       />
                       <input
                         type="hidden"
-                        value="Nextly Template"
+                        value="Cloud Native Rioja"
                         {...register('from_name')}
                       />
                       <input
@@ -232,7 +233,7 @@ const PopupWidget = () => {
                       <div className="mb-3">
                         <button
                           type="submit"
-                          className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-cncf focus:outline-none"
+                          className="w-full px-3 py-4 text-white bg-cncf rounded-md focus:bg-cncf focus:outline-none"
                         >
                           {isSubmitting ? (
                             <svg
