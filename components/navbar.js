@@ -3,6 +3,7 @@ import ThemeChanger from './DarkSwitch';
 import Image from 'next/image';
 import { Disclosure } from '@headlessui/react';
 import React from 'react';
+import { CNCF_URL } from '../app.config';
 const Navbar = () => {
   const navigation = [];
 
@@ -65,11 +66,11 @@ const Navbar = () => {
                       </Link>
                     ))}
                     <Link
-                      href="https://community.cncf.io/cloud-native-rioja/"
+                      href={CNCF_URL}
                       target="_blank"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-cncf rounded-md lg:ml-5"
                     >
-                      Agenda
+                      Join Now
                     </Link>
                   </>
                 </Disclosure.Panel>

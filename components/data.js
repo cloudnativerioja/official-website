@@ -5,28 +5,31 @@ import {
   DevicePhoneMobileIcon,
   AdjustmentsHorizontalIcon,
   SunIcon,
+  RocketLaunchIcon,
+  ScaleIcon,
+  CurrencyDollarIcon,
 } from '@heroicons/react/24/solid';
 import React from 'react';
 
 const benefitOne = {
-  title: 'Highlight your benefits',
-  desc: 'You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.',
+  title: 'Cloud benefits',
+  desc: 'Cloud native technologies enable software developers to build great products faster.',
   image: 'img/benefit-one.png',
   bullets: [
     {
-      title: 'Understand your customers',
-      desc: 'Then explain the first point breifly in one or two lines.',
-      icon: <FaceSmileIcon />,
+      title: 'Improved Efficiency',
+      desc: 'Cloud native tech boosts app development and deployment through cloud infra and DevOps automation.',
+      icon: <RocketLaunchIcon />,
     },
     {
-      title: 'Improve acquisition',
-      desc: 'Here you can add the next benefit point.',
+      title: 'Increased Scalability',
+      desc: 'Cloud native scaling lets developers improve products without infrastructure worries.',
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: 'Drive customer retention',
-      desc: 'This will be your last bullet point in this section.',
-      icon: <CursorArrowRaysIcon />,
+      title: 'Cost Savings',
+      desc: 'Cloud native tech reduces costs via pay-as-you-go and less maintenance.',
+      icon: <CurrencyDollarIcon />,
     },
   ],
 };
