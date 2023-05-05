@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useForm, useWatch } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { Disclosure, Transition } from '@headlessui/react';
 import { WEB3FORMS_API_KEY } from '../app.config';
 
@@ -15,8 +15,6 @@ const PopupWidget = () => {
   });
   const [isSuccess, setIsSuccess] = useState(false);
   const [Message, setMessage] = useState('');
-
-  const userName = useWatch({ control, name: 'name', defaultValue: 'Someone' });
 
   const onSubmit = async (data, e) => {
     console.log(data);
