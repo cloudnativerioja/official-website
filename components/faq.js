@@ -21,7 +21,9 @@ const Faq = () => {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
-                    {item.answer}
+                    <div
+                      dangerouslySetInnerHTML={{ __html: item.answer }}
+                    ></div>
                   </Disclosure.Panel>
                 </>
               )}
@@ -35,22 +37,24 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: 'Is this template completely free to use?',
-    answer: 'Yes, this template is completely free to use.',
-  },
-  {
-    question: 'Can I use it in a commercial project?',
-    answer: 'Yes, this you can.',
-  },
-  {
-    question: 'What is your refund policy? ',
+    question: 'Why is CNCF needed?',
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      'Many firms are recognizing the importance of becoming a software company, even if software is not their primary focus. A prime example of this shift is Airbnb, which is transforming the hospitality sector and causing traditional hotels to face difficulties in keeping up. Cloud native technology enables IT and software to move quickly, and incorporating cloud native tools and techniques facilitates in-house software development, collaboration between business and IT teams, competitive advantage, and superior service delivery to customers. CNCF technologies facilitate cloud portability without being tied to a particular vendor.',
   },
   {
-    question: 'Do you offer technical support? ',
+    question: 'Do I need to be a member to participate?',
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      'No, all are welcome to participate in CNCF projects, events and mailing lists, but if you are from La Rioja, why not?',
+  },
+  {
+    question: 'Why should I join CNCF as a member?',
+    answer:
+      '<a href="https://docs.google.com/presentation/d/1UGewu4MMYZobunfKr5sOGXsspcLOH_5XeCLyOHKh9LU/edit?usp=sharing" target="_blank">These slides give a good overview</a>',
+  },
+  {
+    question: "I have a question, and I'm not sure whom or where to ask.",
+    answer:
+      'No worries! <a href="#">Contact us</a> and we will point you in the right direction.',
   },
 ];
 
