@@ -1,12 +1,9 @@
 import {
-  FaceSmileIcon,
   ChartBarSquareIcon,
-  CursorArrowRaysIcon,
   DevicePhoneMobileIcon,
   AdjustmentsHorizontalIcon,
   SunIcon,
   RocketLaunchIcon,
-  ScaleIcon,
   CurrencyDollarIcon,
 } from '@heroicons/react/24/solid';
 import React from 'react';
