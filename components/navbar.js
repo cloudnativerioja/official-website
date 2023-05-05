@@ -20,7 +20,7 @@ const Navbar = () => {
                     <span>
                       <Image
                         src="img/logo-cncf-rioja.svg"
-                        alt="N"
+                        alt="CNCF Rioja"
                         width="130"
                         height="50"
                         className="w-60"
