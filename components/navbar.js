@@ -1,8 +1,8 @@
-import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
-import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
-import React from "react";
+import Link from 'next/link';
+import ThemeChanger from './DarkSwitch';
+import Image from 'next/image';
+import { Disclosure } from '@headlessui/react';
+import React from 'react';
 const Navbar = () => {
   const navigation = [];
 
