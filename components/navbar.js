@@ -97,11 +97,11 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
-            href="https://community.cncf.io/cloud-native-rioja/"
+            href={CNCF_URL}
             target="_blank"
             className="px-6 py-2 text-white bg-cncf rounded-md md:ml-5"
           >
-            Agenda
+            Join Group
           </Link>
 
           <ThemeChanger />
