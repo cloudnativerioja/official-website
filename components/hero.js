@@ -32,7 +32,7 @@ const Hero = () => {
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-cncf rounded-md "
               >
-                Join Group
+                Entra al grupo
               </a>
               <a
                 href={GITHUB_URL}

@@ -101,7 +101,7 @@ const Navbar = () => {
             target="_blank"
             className="px-6 py-2 text-white bg-cncf rounded-md md:ml-5"
           >
-            Join Group
+            Entra al grupo
           </Link>
 
           <ThemeChanger />
