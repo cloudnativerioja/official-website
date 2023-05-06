@@ -48,7 +48,7 @@ const Home = () => {
 
       {/* <Benefits imgPos="right" data={benefitTwo} /> */}
 
-      <SectionTitle pretitle="Watch a video" title="Cloud Native Definition">
+      <SectionTitle pretitle="Video" title="Definición de Cloud Native">
         Las tecnologías Cloud Native permiten a las organizaciones crear y
         ejecutar aplicaciones escalables en entornos modernos y dinámicos como
         nubes públicas, privadas e híbridas. Los contenedores, los service
@@ -65,10 +65,10 @@ const Home = () => {
 
       <Testimonials />
 
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
+      <SectionTitle
+        pretitle="FAQ"
+        title="Preguntas mas respondidas"
+      ></SectionTitle>
 
       <Faq />
 
