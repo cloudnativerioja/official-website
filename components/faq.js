@@ -37,24 +37,25 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: 'Why is CNCF needed?',
+    question: 'Porque la CNCF es necesaria?',
     answer:
-      'Many firms are recognizing the importance of becoming a software company, even if software is not their primary focus. A prime example of this shift is Airbnb, which is transforming the hospitality sector and causing traditional hotels to face difficulties in keeping up. Cloud native technology enables IT and software to move quickly, and incorporating cloud native tools and techniques facilitates in-house software development, collaboration between business and IT teams, competitive advantage, and superior service delivery to customers. CNCF technologies facilitate cloud portability without being tied to a particular vendor.',
+      'Muchas empresas reconocen la importancia de convertirse en una empresa de software, incluso si el software no es su principal objetivo. Un ejemplo claro de este cambio es Airbnb, que está transformando el sector de la hostelería y causando dificultades a los hoteles tradicionales para mantenerse al día y seguirle el ritmo. permite que las TI y el software se muevan con rapidez, y la incorporación de herramientas y técnicas nativas de la nube facilita el desarrollo interno de software, la colaboración entre los equipos de negocio y de TI, la ventaja competitiva y la prestación de servicios superiores a los clientes. Las tecnologías CNCF facilitan la portabilidad de la nube sin estar atado a un proveedor concreto.',
   },
   {
-    question: 'Do I need to be a member to participate?',
+    question: '¿Necesito ser miembro para participar?',
     answer:
-      'No, all are welcome to participate in CNCF projects, events and mailing lists, but if you are from La Rioja, why not?',
+      'No, todos son bienvenidos a participar en los proyectos, eventos y listas de correo del CNCF, pero si eres de La Rioja, ¿por qué no?',
   },
   {
-    question: 'Why should I join CNCF as a member?',
+    question: 'Porque debería unirme a la CNCF como miembro?',
     answer:
-      '<a href="https://docs.google.com/presentation/d/1UGewu4MMYZobunfKr5sOGXsspcLOH_5XeCLyOHKh9LU/edit?usp=sharing" target="_blank">These slides give a good overview</a>',
+      '<a href="https://docs.google.com/presentation/d/1UGewu4MMYZobunfKr5sOGXsspcLOH_5XeCLyOHKh9LU/edit?usp=sharing" target="_blank">Estas slides es un buen resumen</a>',
   },
   {
-    question: "I have a question, and I'm not sure whom or where to ask.",
+    question:
+      'Tengo una pregunta, y no estoy seguro de a quién o dónde preguntar.',
     answer:
-      'No worries! <a href="#">Contact us</a> and we will point you in the right direction.',
+      'no te preocupes! Entra al canal de <a href="https://t.me/CloudNativeRioja/1">Telegram</a> y te llevaremos en la mejor dirección.',
   },
 ];
 

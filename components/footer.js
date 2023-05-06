@@ -28,9 +28,10 @@ export default function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Cloud Native Computing Foundation (CNCF) user group dedicated to
-              building a strong, open, diverse developer community around the
-              Cloud Native platform and technologies in La Rioja.
+              El Community Group de la Cloud Native Computing Foundation (CNCF)
+              dedicado a construir una comunidad de desarrolladores fuerte,
+              abierta y diversa en torno a la plataforma y tecnologías Cloud
+              Native en La Rioja.
             </div>
           </div>
 

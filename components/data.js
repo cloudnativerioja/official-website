@@ -1,57 +1,31 @@
 import {
   ChartBarSquareIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
   RocketLaunchIcon,
   CurrencyDollarIcon,
 } from '@heroicons/react/24/solid';
 import React from 'react';
 
 const benefitOne = {
-  title: 'Cloud benefits',
-  desc: 'Cloud native technologies enable software developers to build great products faster.',
+  title: 'Beneficios de un entorno Cloud Native',
+  desc: 'Las tecnologías Cloud Native permiten a los desarrolladores de software crear grandes productos más rápido.',
   image: 'img/benefit-one.png',
   bullets: [
     {
-      title: 'Improved Efficiency',
-      desc: 'Cloud native tech boosts app development and deployment through cloud infra and DevOps automation.',
+      title: 'Mejora la eficiencia',
+      desc: 'Las tecnologías Cloud Native impulan el desarrollo y despliegue de aplicaciones a través de la infraestructura en la nube y la automatización de DevOps.',
       icon: <RocketLaunchIcon />,
     },
     {
-      title: 'Increased Scalability',
-      desc: 'Cloud native scaling lets developers improve products without infrastructure worries.',
+      title: 'Incrementa la escalabilidad',
+      desc: 'El escalado Cloud Native permite a los desarrolladores mejorar los productos sin preocupaciones de infraestructura.',
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: 'Cost Savings',
-      desc: 'Cloud native tech reduces costs via pay-as-you-go and less maintenance.',
+      title: 'Ahorro de costes',
+      desc: 'La tecnología Cloud Native reduce los costes mediante el pago por uso y menos mantenimiento.',
       icon: <CurrencyDollarIcon />,
     },
   ],
 };
 
-const benefitTwo = {
-  title: 'Offer more benefits here',
-  desc: 'You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.',
-  image: 'img/benefit-two.png',
-  bullets: [
-    {
-      title: 'Mobile Responsive Template',
-      desc: 'Nextly is designed as a mobile first responsive template.',
-      icon: <DevicePhoneMobileIcon />,
-    },
-    {
-      title: 'Powered by Next.js & TailwindCSS',
-      desc: 'This template is powered by latest technologies and tools.',
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: 'Dark & Light Mode',
-      desc: 'Nextly comes with a zero-config light & dark mode. ',
-      icon: <SunIcon />,
-    },
-  ],
-};
-
-export { benefitOne, benefitTwo };
+export { benefitOne };

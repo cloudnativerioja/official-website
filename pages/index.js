@@ -22,7 +22,7 @@ const Home = () => {
         </title>
         <meta
           name="description"
-          content="Cloud Native Computing Foundation (CNCF) user group dedicated to building a strong, open, diverse developer community around the Cloud Native platform and technologies in La Rioja."
+          content="El Community Group Cloud Native Rioja perteneciente a la Cloud Native Computing Foundation (CNCF) tiene como objetivo construir una comunidad de desarrolladores fuerte, abierta y diversa en torno a la plataforma y tecnologías Cloud Native en La Rioja."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -33,14 +33,15 @@ const Home = () => {
 
       <SectionTitle
         pretitle="Cloud Native Computing Foundation"
-        title="What is CNCF?"
+        title="Que es la CNCF?"
       >
-        The Cloud Native Computing Foundation (CNCF) is an open source software
-        foundation that aims to make cloud native computing widely used and
-        environmentally sustainable. Cloud native computing employs an open
-        source software stack to deploy applications as microservices, packing
-        each component into its own container, and dynamically orchestrating
-        these containers to optimize resource utilization.
+        La Cloud Native Computing Foundation (CNCF) es una fundación de software
+        de código abierto que tiene como objetivo hacer que la informática
+        nativa de la nube sea ampliamente utilizada y ambientalmente sostenible.
+        La CNCF emplea un conjunto de soluciones de software de código abierto
+        para implementar aplicaciones como microservicios, empaquetando cada
+        componente en su propio contenedor y orquestando dinámicamente estos
+        contenedores para optimizar la utilización de recursos.
       </SectionTitle>
 
       <Benefits data={benefitOne} />
@@ -48,10 +49,11 @@ const Home = () => {
       {/* <Benefits imgPos="right" data={benefitTwo} /> */}
 
       <SectionTitle pretitle="Watch a video" title="Cloud Native Definition">
-        Cloud native technologies empower organizations to build and run
-        scalable applications in modern, dynamic environments such as public,
-        private, and hybrid clouds. Containers, service meshes, microservices,
-        immutable infrastructure, and declarative APIs exemplify this approach.
+        Las tecnologías Cloud Native permiten a las organizaciones crear y
+        ejecutar aplicaciones escalables en entornos modernos y dinámicos como
+        nubes públicas, privadas e híbridas. Los contenedores, los service
+        meshes, los microservicios, la infraestructura inmutable y las API
+        declarativas ejemplifican este enfoque.
       </SectionTitle>
 
       <Video />
