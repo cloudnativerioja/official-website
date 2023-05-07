@@ -37,7 +37,7 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: 'Porque la CNCF es necesaria?',
+    question: '¿Porque la CNCF es necesaria?',
     answer:
       'Muchas empresas reconocen la importancia de convertirse en una empresa de software, incluso si el software no es su principal objetivo. Un ejemplo claro de este cambio es Airbnb, que está transformando el sector de la hostelería y causando dificultades a los hoteles tradicionales para mantenerse al día y seguirle el ritmo. permite que las TI y el software se muevan con rapidez, y la incorporación de herramientas y técnicas nativas de la nube facilita el desarrollo interno de software, la colaboración entre los equipos de negocio y de TI, la ventaja competitiva y la prestación de servicios superiores a los clientes. Las tecnologías CNCF facilitan la portabilidad de la nube sin estar atado a un proveedor concreto.',
   },
@@ -47,7 +47,7 @@ const faqdata = [
       'No, todos son bienvenidos a participar en los proyectos, eventos y listas de correo del CNCF, pero si eres de La Rioja, ¿por qué no?',
   },
   {
-    question: 'Porque debería unirme a la CNCF como miembro?',
+    question: '¿Porque debería unirme a la CNCF como miembro?',
     answer:
       '<a href="https://docs.google.com/presentation/d/1UGewu4MMYZobunfKr5sOGXsspcLOH_5XeCLyOHKh9LU/edit?usp=sharing" target="_blank">Estas slides es un buen resumen</a>',
   },
@@ -55,7 +55,7 @@ const faqdata = [
     question:
       'Tengo una pregunta, y no estoy seguro de a quién o dónde preguntar.',
     answer:
-      'no te preocupes! Entra al canal de <a href="https://t.me/CloudNativeRioja/1">Telegram</a> y te llevaremos en la mejor dirección.',
+      '¡No te preocupes! Entra al canal de <a href="https://t.me/CloudNativeRioja/1">Telegram</a> y te llevaremos en la mejor dirección.',
   },
 ];
 
