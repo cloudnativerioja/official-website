@@ -1,4 +1,4 @@
-name: Pull Request
+name: Linter y tests
 
 on:
   pull_request:
@@ -7,13 +7,13 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  pull-request:
+  linter_y_tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: "16.x"
+          node-version: '16.x'
           #registry-url: "https://npm.pkg.github.com"
       - run: |
           if [ -e yarn.lock ]; then

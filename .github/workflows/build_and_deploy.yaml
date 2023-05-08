@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Construir y desplegar
 
 on:
   push:
@@ -39,3 +39,10 @@ jobs:
         with:
           branch: gh-pages
           folder: out
+
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.55.0 # Don't use @master unless you're happy to test the latest version
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          WITH_V: false
+          DEFAULT_BUMP: patch
