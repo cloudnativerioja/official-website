@@ -109,9 +109,9 @@ const PopupWidget = () => {
             >
               <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-cncf">
-                  <h3 className="text-lg text-white">How can we help?</h3>
+                  <h3 className="text-lg text-white">¿Tienes alguna duda?</h3>
                   <p className="text-white opacity-50">
-                    We usually respond in a few hours
+                    Normalmente respondemos en menos de 24 horas
                   </p>
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
@@ -151,7 +151,7 @@ const PopupWidget = () => {
                           id="full_name"
                           placeholder="John Doe"
                           {...register('name', {
-                            required: 'Full name is required',
+                            required: 'Se requiere un nombre',
                             maxLength: 80,
                           })}
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
@@ -178,10 +178,10 @@ const PopupWidget = () => {
                           type="email"
                           id="email"
                           {...register('email', {
-                            required: 'Enter your email',
+                            required: 'Ingresa un email',
                             pattern: {
                               value: /^\S+@\S+$/i,
-                              message: 'Please enter a valid email',
+                              message: 'Por favor, un email válido',
                             },
                           })}
                           placeholder="you@company.com"
@@ -204,14 +204,14 @@ const PopupWidget = () => {
                           htmlFor="message"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
-                          Your Message
+                          Tu mensaje
                         </label>
 
                         <textarea
                           rows="4"
                           id="message"
                           {...register('message', {
-                            required: 'Enter your Message',
+                            required: 'Pon tu mensaje',
                           })}
                           placeholder="Your Message"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
@@ -254,7 +254,7 @@ const PopupWidget = () => {
                               ></path>
                             </svg>
                           ) : (
-                            'Send Message'
+                            'Envia mensaje'
                           )}
                         </button>
                       </div>
@@ -295,7 +295,7 @@ const PopupWidget = () => {
                           />
                         </svg>
                         <h3 className="py-5 text-xl text-green-500">
-                          Message sent successfully
+                          El mensaje ha sido enviado satisfactoriamente
                         </h3>
                         <p className="text-gray-700 md:px-3">{Message}</p>
                         <button
@@ -326,7 +326,7 @@ const PopupWidget = () => {
                       </svg>
 
                       <h3 className="text-xl text-red-400 py-7">
-                        Oops, Something went wrong!
+                        Ooops, algo salió mal
                       </h3>
                       <p className="text-gray-700 md:px-3">{Message}</p>
                       <button
