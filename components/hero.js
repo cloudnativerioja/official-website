@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
             <Image
-              src="img/hub.jpg"
+              src="img/logo-land-rioja.svg"
               width="616"
               height="617"
               className="object-cover"
