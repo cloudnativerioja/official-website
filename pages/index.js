@@ -7,7 +7,6 @@ import { benefitOne } from '../components/data';
 import Video from '../components/video';
 import Benefits from '../components/benefits';
 import Footer from '../components/footer';
-import Testimonials from '../components/testimonials';
 import Cta from '../components/cta';
 import Faq from '../components/faq';
 import PopupWidget from '../components/popupWidget';
@@ -57,13 +56,6 @@ const Home = () => {
       </SectionTitle>
 
       <Video />
-
-      <SectionTitle pretitle="Team" title="Know who we are">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-
-      <Testimonials />
 
       <SectionTitle
         pretitle="FAQ"

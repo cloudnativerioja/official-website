@@ -8,7 +8,7 @@ import React from 'react';
 const benefitOne = {
   title: 'Beneficios de un entorno Cloud Native',
   desc: 'Las tecnologías Cloud Native permiten a los desarrolladores de software crear grandes productos más rápido.',
-  image: 'img/benefit-one.png',
+  image: 'img/kubectl.svg',
   bullets: [
     {
       title: 'Mejora la eficiencia',
