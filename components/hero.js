@@ -10,13 +10,13 @@ const Hero = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              <strong>Haz el Cloud Native</strong>
+              <strong className="uppercase">Haz el Cloud Native</strong>
               <br />
               <i
                 className="cursor-help"
-                title="Native, related to, or typical of the Spanish town of Rioja."
+                title="Nativo, relacionado o típico de La Rioja"
               >
-                !riojeño¡
+                ¡riojeño!
               </i>
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
@@ -30,7 +30,7 @@ const Hero = () => {
                 href={CNCF_URL}
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-cncf rounded-md "
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-accent rounded-md "
               >
                 Entra al grupo
               </a>
