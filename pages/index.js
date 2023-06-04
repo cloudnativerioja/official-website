@@ -3,7 +3,7 @@ import Hero from '../components/hero';
 import Navbar from '../components/navbar';
 import SectionTitle from '../components/sectionTitle';
 
-import { benefitOne, benefitTwo } from '../components/data';
+import { benefitOne } from '../components/data';
 import Video from '../components/video';
 import Benefits from '../components/benefits';
 import Footer from '../components/footer';
