@@ -8,6 +8,7 @@ const SectionTitle = (props) => {
         props.align === 'left' ? '' : 'items-center justify-center text-center'
       }`}
     >
+      {props.id && <div className="relative top-[-50px]" id={props.id}></div>}
       {props.pretitle && (
         <div className="text-sm font-bold tracking-wider text-cncf uppercase">
           {props.pretitle}

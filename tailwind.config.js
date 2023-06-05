@@ -16,6 +16,8 @@ module.exports = {
       colors: {
         trueGray: colors.neutral,
         cncf: '#0086FF',
+        'text-cncf': '#0086FF',
+        accent: '#d62293',
       },
     },
     fontFamily: {
