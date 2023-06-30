@@ -82,8 +82,8 @@ const Hero = () => {
                 src="https://raw.githubusercontent.com/cncf/artwork/master/other/kubernetes-forum/general/black/kubernetes-forum-general-black.svg"
                 alt="N"
                 width="136"
-                height="32"
-                className="w-32"
+                height="25"
+                className="w-25"
               />
             </div>
             <div className="text-gray-400 dark:text-gray-400 opacity-40">
@@ -91,8 +91,8 @@ const Hero = () => {
                 src="https://raw.githubusercontent.com/cncf/artwork/master/other/kubernetes-community-days/horizontal/black/kubernetes-community-days-horizontal-black.svg"
                 alt="N"
                 width="136"
-                height="32"
-                className="w-32"
+                height="25"
+                className="w-25"
               />
             </div>
             <div className="text-gray-400 dark:text-gray-400 opacity-40">
@@ -100,8 +100,8 @@ const Hero = () => {
                 src="https://raw.githubusercontent.com/cncf/artwork/master/other/csi/horizontal/black/csi-horizontal-black.svg"
                 alt="N"
                 width="136"
-                height="32"
-                className="w-32"
+                height="25"
+                className="w-25"
               />
             </div>
             <div className="pt-1 text-gray-400 dark:text-gray-400 opacity-40">
@@ -109,8 +109,17 @@ const Hero = () => {
                 src="https://raw.githubusercontent.com/cncf/artwork/master/other/envoycon/horizontal/black/envoycon-horizontal-black.svg"
                 alt="N"
                 width="136"
-                height="32"
-                className="w-32"
+                height="25"
+                className="w-25"
+              />
+            </div>
+            <div className="pt-1 text-gray-400 dark:text-gray-400 opacity-40">
+              <Image
+                src="https://www.civo.com/assets/public/brand-assets/civo-logo-black-930bec3ea42e1bb8c51ddb4ff6ad6f1d9957e16cc030ef89fd01be602d0cf796.svg"
+                alt="N"
+                width="136"
+                height="25"
+                className="w-25"
               />
             </div>
           </div>
