@@ -64,7 +64,11 @@ export default function Footer() {
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400 opacity-60">
           Copyright © {new Date().getFullYear()}. Cloud Native Rioja. All rights
-          reserved.
+          reserved. Powered by{' '}
+          <a href="https://www.civo.com" target="_blank" rel="noopener">
+            Civo Cloud
+          </a>
+          .
         </div>
       </Container>
     </div>

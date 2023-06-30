@@ -21,3 +21,7 @@ make dev
 ```
 
 Este comando instalará las dependencias necesarias y levantará lo necesario en la dirección http://localhost:3000
+
+---
+
+### Powered by [Civo Cloud](https://www.civo.com)
