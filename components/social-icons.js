@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const GitHub = ({ size = 24 }) => (
   <svg
     role="img"
