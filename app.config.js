@@ -2,6 +2,11 @@
 export const CNCF_URL = 'https://community.cncf.io/cloud-native-rioja/';
 export const GITHUB_URL = 'https://github.com/cloudnativerioja';
 export const TELEGRAM_URL = 'https://t.me/cloudnativerioja';
+export const TWITTER_URL = 'https://twitter.com/CloudRioja';
+export const YOUTUBE_URL =
+  'https://www.youtube.com/channel/UCPJSWBgMthDZ_VYAopkbA7w';
+export const LINKEDIN_URL =
+  'https://www.linkedin.com/company/cloud-native-rioja';
 export const CALL_FOR_PAPERS_URL = 'https://cfp.cloudnativerioja.com/';
 export const DOCS_URL = 'https://docs.cloudnativerioja.com/';
 
