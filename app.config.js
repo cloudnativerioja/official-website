@@ -5,6 +5,8 @@ export const TELEGRAM_URL = 'https://t.me/cloudnativerioja';
 export const TWITTER_URL = 'https://twitter.com/CloudRioja';
 export const YOUTUBE_URL =
   'https://www.youtube.com/channel/UCPJSWBgMthDZ_VYAopkbA7w';
+export const YOUTUBE_TALKS_PLAYLIST_URL =
+  'https://www.youtube.com/watch?v=P6xwz7Co0ew&list=PLA9ujWCrQ2eahjm6SV7Fn7ueUgzyx-T1f';
 export const LINKEDIN_URL =
   'https://www.linkedin.com/company/cloud-native-rioja';
 export const CALL_FOR_PAPERS_URL = 'https://cfp.cloudnativerioja.com/';

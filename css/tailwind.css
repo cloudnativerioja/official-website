@@ -11,9 +11,12 @@
 }
 
 #devops-yt-playlist {
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 
 #devops-yt-playlist .youtube-video-image {
   @apply md:rounded-lg;
+}
+#devops-yt-playlist .youtube-video-figure figcaption {
+  @apply font-sans pt-1 text-sm leading-normal text-gray-500;
 }

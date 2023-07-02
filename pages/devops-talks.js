@@ -7,9 +7,9 @@ import Faq from '../components/faq';
 import PopupWidget from '../components/popupWidget';
 import YouTubePlaylist from '@codesweetly/react-youtube-playlist';
 import {
-  CNCF_URL,
   YOUTUBE_API_KEY,
   YOUTUBE_TALKS_PLAYLIST,
+  YOUTUBE_TALKS_PLAYLIST_URL,
 } from '../app.config';
 import Container from '../components/container';
 import SectionTitle from '../components/sectionTitle';
@@ -38,12 +38,12 @@ const DevOpsTalksPage = () => {
         </p>
 
         <a
-          href={CNCF_URL}
+          href={YOUTUBE_TALKS_PLAYLIST_URL}
           target="_blank"
           rel="noopener"
           className="inline-block mt-5 px-5 py-2 text-lg font-normal text-center text-white bg-cncf rounded-md "
         >
-          Únete ahora
+          <span>Ir al canal de YouTube</span>
         </a>
       </SectionTitle>
 
