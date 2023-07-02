@@ -304,6 +304,11 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@codesweetly/react-youtube-playlist@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@codesweetly/react-youtube-playlist/-/react-youtube-playlist-1.0.7.tgz#1781eb1cc19e20c6670f59dcaa5482b6432c4aa9"
+  integrity sha512-DqJZS+KmbTZfFv2BL3cWijLUcQ5dlaMy9kcglRkf1fuEMj3uMhDV5VDkvM2AXV5eQPaJn8Qr/JvVg1xoo4KoXw==
+
 "@emotion/babel-plugin@^11.10.8":
   version "11.10.8"
   resolved "https://registry.npmjs.org/@emotion/babel-plugin/-/babel-plugin-11.10.8.tgz"
@@ -2078,6 +2083,11 @@ fsevents@^2.3.2, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
+
+fslightbox-react@^1.7.6:
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/fslightbox-react/-/fslightbox-react-1.7.6.tgz#eb9565e1f836b647cdbdf4734705222ca542dbd3"
+  integrity sha512-7LN2GZRLHo2vZGKdH+BZDJUoUDkCRCLlZ5hOwtLtZplmGZQ9nqzpG54cTax7XNjbYGTWLT6BHdMiL5zOEhiRlA==
 
 function-bind@^1.1.1:
   version "1.1.1"

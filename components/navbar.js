@@ -8,8 +8,12 @@ import { CALL_FOR_PAPERS_URL, CNCF_URL, DOCS_URL } from '../app.config';
 const Navbar = () => {
   const navigation = [
     {
-      name: 'Conoce la CNCF',
-      link: '#cncf',
+      name: 'CNCF',
+      link: '/#cncf',
+    },
+    {
+      name: 'DevOps Talks',
+      link: '/devops-talks',
     },
     {
       name: 'Colabora',
@@ -17,7 +21,7 @@ const Navbar = () => {
     },
     {
       name: 'FAQs',
-      link: '#faq',
+      link: '/#faq',
     },
     {
       name: 'Docs',

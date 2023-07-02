@@ -9,3 +9,11 @@
     @apply scroll-smooth;
   }
 }
+
+#devops-yt-playlist {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+#devops-yt-playlist .youtube-video-image {
+  @apply md:rounded-lg;
+}
