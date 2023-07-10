@@ -1,0 +1,14 @@
+# Node assets
+node_modules
+npm-debug.log
+
+
+# Git config
+.git/
+.gitignore
+.github/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
