@@ -11,6 +11,9 @@ RUN npm install
 # Copy app source code
 COPY . .
 
+# Build app
+RUN next build
+
 # Build static assets
 RUN npm run export
 

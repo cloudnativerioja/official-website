@@ -33,15 +33,16 @@ jobs:
       - name: 'Determine tag'
         run: 'echo "RELEASE_TAG=0.0.1" >> $GITHUB_ENV'
       - name: Build the Docker image
-        run: docker build . -t cloudnativerioja/official-website:$RELEASE_TAG
+        run: docker build . -t cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
 
   test-image:
     runs-on: ubuntu-latest
+    depends-on: build-image
     steps:
       - uses: actions/checkout@v3
       # - name: 'Determine tag'
       #   run: 'echo "RELEASE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV'
       - name: Run the Docker image
-        run: docker run -p 8080:80 cloudnativerioja/official-website:$RELEASE_TAG
+        run: docker run -p 8080:80 cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
       - name: Test the Docker image
         run: curl -sSf http://localhost:8080 | grep -q 'Cloud Native Rioja'
