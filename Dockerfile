@@ -11,11 +11,14 @@ RUN npm install
 # Copy app source code
 COPY . .
 
+# Install next.js
+RUN npm i -g next
+
 # Build app
 RUN next build
 
-# Build static assets
-RUN npm run export
+# # Build static assets
+# RUN npm run export
 
 FROM --platform=linux/amd64 nginx:alpine
 
