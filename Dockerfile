@@ -17,7 +17,7 @@ RUN npm run export
 FROM --platform=linux/amd64 nginx:alpine
 
 # Copy static assets from builder stage
-COPY --from=builder /app/out /usr/share/nginx/html
+COPY --from=builder /app/out/ /usr/share/nginx/html
 
 EXPOSE 80
 
