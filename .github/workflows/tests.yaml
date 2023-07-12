@@ -37,7 +37,7 @@ jobs:
 
   test-image:
     runs-on: ubuntu-latest
-    depends-on: build-image
+    needs: build-image
     steps:
       - uses: actions/checkout@v3
       # - name: 'Determine tag'
