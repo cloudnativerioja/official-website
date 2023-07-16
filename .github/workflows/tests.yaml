@@ -37,4 +37,4 @@ jobs:
       - name: Run the Docker image
         run: docker run -d -p 8080:80 cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
       - name: Test the Docker image
-        run: curl -sSf http://localhost:8080 | grep -q 'Cloud Native Rioja'
+        run: curl -sSf localhost:8080 | grep -q 'Cloud Native Rioja'
