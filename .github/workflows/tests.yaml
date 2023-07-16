@@ -40,8 +40,8 @@ jobs:
     needs: build-image
     steps:
       - uses: actions/checkout@v3
-      # - name: 'Determine tag'
-      #   run: 'echo "RELEASE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV'
+      - name: 'Determine tag'
+        run: 'echo "RELEASE_TAG=0.0.1" >> $GITHUB_ENV'
       - name: Run the Docker image
         run: docker run -p 8080:80 cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
       - name: Test the Docker image
