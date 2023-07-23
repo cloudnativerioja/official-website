@@ -49,7 +49,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
+          tags: cloudnativerioja/official-website:latest,cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
 
   release:
     name: 'Release'
