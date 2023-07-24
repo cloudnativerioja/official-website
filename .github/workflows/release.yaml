@@ -47,9 +47,19 @@ jobs:
 
       - name: Build and push
         uses: docker/build-push-action@v4
+        id: build-and-push
         with:
           push: true
           tags: cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
+
+      - name: Sign image with a key
+        run: |
+          cosign sign --yes --key env://COSIGN_PRIVATE_KEY "${TAGS}@${DIGEST}"
+        env:
+          TAGS: ${{ steps.build-and-push.outputs.tags }}
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+          COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
+          DIGEST: ${{ steps.build-and-push.outputs.digest }}
 
   release:
     name: 'Release'
