@@ -57,12 +57,10 @@ jobs:
 
       - name: Sign image with a key
         run: |
-          cosign sign --yes --key env://COSIGN_PRIVATE_KEY ${{ env.TAGS }}
+          cosign sign --yes --key env://COSIGN_PRIVATE_KEY cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
         env:
-          TAGS: ${{ steps.build-and-push.outputs.tags }}
           COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
-          DIGEST: ${{ steps.build-and-push.outputs.digest }}
 
   release:
     name: 'Release'
