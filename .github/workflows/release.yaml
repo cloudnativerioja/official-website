@@ -62,6 +62,10 @@ jobs:
           COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
 
+      - name: Verify image
+        run: |
+          cosign verify --key .github/cosign.pub cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
+
   release:
     name: 'Release'
 
