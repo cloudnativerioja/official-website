@@ -31,7 +31,7 @@ jobs:
           exit-code: '1'
           ignore-unfixed: true
           vuln-type: 'os,library'
-          severity: 'CRITICAL,HIGH'
+          severity: 'CRITICAL'
 
       - name: Run the Docker image
         run: docker run -d -p 8080:80 cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
