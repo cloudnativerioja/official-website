@@ -16,12 +16,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: 'Determine tag'
         run: 'echo "RELEASE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV'
+
       - name: Build the Docker image
         run: docker build . -t cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'cloudnativerioja/official-website:${{ env.RELEASE_TAG }}'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          severity: 'CRITICAL'
+
       - name: Run the Docker image
         run: docker run -d -p 8080:80 cloudnativerioja/official-website:${{ env.RELEASE_TAG }}
+
       - name: Test the Docker image
         run: sleep 5 && curl -sSf localhost:8080 | grep -q 'Cloud Native Rioja'
 
