@@ -12,7 +12,7 @@ CHART_NAME=official-website
 # function modify tag in values.yaml
 function modify_tag() {
   echo "Modifying tag..."
-  sed -i "s/tag: .*/tag: ${TAG}/g" ${CHART_PATH}${CHART_NAME}/values.yaml
+  sed -i "s/tag: .*/tag: ${TAG}/g" ${CHART_PATH}/${CHART_NAME}/values.yaml
 }
 
 # function login with helm to an OCI registry
@@ -24,7 +24,7 @@ function login() {
 # function package a chart
 function package() {
   echo "Packaging chart..."
-  helm package ${CHART_PATH}${CHART_NAME}
+  helm package ${CHART_PATH}/${CHART_NAME}
 }
 
 # function push a chart to an OCI registry
