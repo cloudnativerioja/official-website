@@ -30,7 +30,7 @@ function package() {
 # function push a chart to an OCI registry
 function push() {
     echo "Pushing chart to OCI registry..."
-    helm push ./${CHART_NAME}/${CHART_NAME}/${CHART_NAME}-${TAG}.tgz oci://${OCI_REGISTRY}/${OCI_NAMESPACE}
+    helm push ./${CHART_NAME}/${CHART_NAME}-${TAG}.tgz oci://${OCI_REGISTRY}/${OCI_NAMESPACE}
 }
 
 function main() {
