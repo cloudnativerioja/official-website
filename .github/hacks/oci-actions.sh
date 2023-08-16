@@ -24,7 +24,7 @@ function login() {
 # function package a chart
 function package() {
   echo "Packaging chart..."
-  helm package ${CHART_PATH}/${CHART_NAME} --version ${TAG}
+  helm package ${CHART_PATH}/${CHART_NAME} --version ${TAG} --app-version ${TAG}
 }
 
 # function push a chart to an OCI registry
