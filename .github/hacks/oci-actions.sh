@@ -7,7 +7,7 @@ set -euo pipefail
 OCI_REGISTRY=registry-1.docker.io
 OCI_NAMESPACE=cloudnativerioja
 CHART_PATH=charts
-CHART_NAME=official-website
+CHART_NAME=chart-official-website
 
 # function modify tag in values.yaml
 function modify_tag() {
@@ -24,7 +24,7 @@ function login() {
 # function package a chart
 function package() {
   echo "Packaging chart..."
-  helm package ${CHART_PATH}/${CHART_NAME} --version ${TAG}
+  helm package ${CHART_PATH}/${CHART_NAME} --version ${TAG} --app-version ${TAG}
 }
 
 # function push a chart to an OCI registry

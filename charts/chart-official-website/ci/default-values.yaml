@@ -1,8 +1,8 @@
-# Default values for official-website.
+# Default values for chart-official-website.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: cloudnativerioja/official-website
@@ -26,11 +26,10 @@ serviceAccount:
 podAnnotations: {}
 
 podSecurityContext:
-  {}
-  # fsGroup: 2000
+  runAsUser: 0
 
 securityContext:
-  {}
+  runAsUser: 0
   # capabilities:
   #   drop:
   #   - ALL
@@ -44,20 +43,6 @@ service:
 
 ingress:
   enabled: true
-  className: ''
-  annotations:
-    cert-manager.io/cluster-issuer: 'letsencrypt-prod'
-    kubernetes.io/ingress.class: traefik
-    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
-  hosts:
-    - host: website.cluster.cloudnativerioja.com
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  tls:
-    - secretName: official-website-tls
-      hosts:
-        - website.cluster.cloudnativerioja.com
 
 resources:
   limits:
@@ -68,7 +53,7 @@ resources:
     memory: 256Mi
 
 autoscaling:
-  enabled: true
+  enabled: false
   minReplicas: 1
   maxReplicas: 4
   targetCPUUtilizationPercentage: 80
