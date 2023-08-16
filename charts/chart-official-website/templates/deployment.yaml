@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "official-website.fullname" . }}
+  name: {{ include "chart-official-website.fullname" . }}
   labels:
-    {{- include "official-website.labels" . | nindent 4 }}
+    {{- include "chart-official-website.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "official-website.selectorLabels" . | nindent 6 }}
+      {{- include "chart-official-website.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "official-website.selectorLabels" . | nindent 8 }}
+        {{- include "chart-official-website.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "official-website.serviceAccountName" . }}
+      serviceAccountName: {{ include "chart-official-website.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
