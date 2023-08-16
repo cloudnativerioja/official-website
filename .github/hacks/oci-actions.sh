@@ -7,7 +7,7 @@ set -euo pipefail
 OCI_REGISTRY=registry-1.docker.io
 OCI_NAMESPACE=cloudnativerioja
 CHART_PATH=charts
-CHART_NAME=official-website
+CHART_NAME=chart-official-website
 
 # function modify tag in values.yaml
 function modify_tag() {
