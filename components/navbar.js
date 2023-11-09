@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div className="w-full">
       {/* annoucement  */}
-      <div class="mt-6 mb-6 flex flex-wrap items-center justify-center">
+      <div class="md:mt-8 md:mb-8 flex flex-wrap items-center justify-center">
         <Link
           href="https://community.cncf.io/events/details/cncf-cloud-native-rioja-presents-kubernetes-rioja-day/"
           target="_blank"
