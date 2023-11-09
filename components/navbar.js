@@ -31,8 +31,40 @@ const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
-        {/* Logo  */}
+      {/* annoucement  */}
+      <div className="md:mt-8 md:mb-8 flex flex-wrap items-center justify-center">
+        <Link
+          href="https://community.cncf.io/events/details/cncf-cloud-native-rioja-presents-kubernetes-rioja-day/"
+          target="_blank"
+        >
+          <div
+            className="p-2 bg-gray-700 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+            role="alert"
+          >
+            <span className="flex items-center justify-center rounded-full bg-cncf uppercase px-3 py-2 text-xs font-bold mr-3">
+              <span className="relative flex h-2 w-2 mr-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+              </span>
+              KUBERNETES Rioja DAY 2023
+            </span>
+            <span className="font-semibold mr-2 text-left flex-auto">
+              Únete al primer evento Cloud Native en La Rioja
+            </span>
+            <svg
+              className="fill-current opacity-75 h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+            </svg>
+          </div>
+        </Link>
+      </div>
+
+      {/* menu  */}
+      <nav className="container relative flex flex-wrap items-center justify-between px-8 pb-4 mx-auto lg:justify-between xl:px-0">
+        {/* logo  */}
         <Disclosure>
           {({ open }) => (
             <>
@@ -92,7 +124,7 @@ const Navbar = () => {
                       target="_blank"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-cncf rounded-md lg:ml-5"
                     >
-                      Join Now
+                      Únete al grupo
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -105,11 +137,11 @@ const Navbar = () => {
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((item, index) => (
-              <li className="mr-3 nav__item" key={index}>
+              <li className="mr-1 nav__item" key={index}>
                 <Link
                   key={index}
                   href={item.link}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-cncf focus:text-cncf focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  className="inline-block px-4 py-2 text-md font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-cncf focus:text-cncf focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
                 >
                   {item.name}
                 </Link>
@@ -124,7 +156,7 @@ const Navbar = () => {
             target="_blank"
             className="px-6 py-2 text-white bg-accent rounded-md md:ml-5"
           >
-            Entra al grupo
+            Únete al grupo
           </Link>
 
           <ThemeChanger />
