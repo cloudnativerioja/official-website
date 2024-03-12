@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Disclosure } from '@headlessui/react';
 import React from 'react';
 import { CALL_FOR_PAPERS_URL, CNCF_URL, DOCS_URL } from '../app.config';
+import Annoucement from './annoucement';
 
 const Navbar = () => {
   const navigation = [
@@ -31,6 +32,8 @@ const Navbar = () => {
 
   return (
     <div className="w-full mt-8">
+      <Annoucement />
+
       {/* menu  */}
       <nav className="container relative flex flex-wrap items-center justify-between px-8 pb-4 mx-auto lg:justify-between xl:px-0">
         {/* logo  */}

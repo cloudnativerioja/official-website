@@ -17,10 +17,10 @@ const Annoucement = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
             </span>
-            KUBERNETES Rioja DAY 2023
+            KubeFest 2024 - 6 Abril
           </span>
           <span className="font-semibold mr-2 text-left flex-auto">
-            Únete al primer evento Cloud Native en La Rioja
+            1er Evento de Kubernetes en La Rioja
           </span>
           <svg
             className="fill-current opacity-75 h-4 w-4"
