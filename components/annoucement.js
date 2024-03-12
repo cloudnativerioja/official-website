@@ -4,10 +4,7 @@ import Link from 'next/link';
 const Annoucement = () => {
   return (
     <div className="md:mt-8 md:mb-8 flex flex-wrap items-center justify-center">
-      <Link
-        href="https://community.cncf.io/events/details/cncf-cloud-native-rioja-presents-kubernetes-rioja-day/"
-        target="_blank"
-      >
+      <Link href="https://kubefest.com" target="_blank">
         <div
           className="p-2 bg-gray-700 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
           role="alert"
