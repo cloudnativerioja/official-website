@@ -86,16 +86,16 @@ const Hero = () => {
                 className="w-25"
               />
             </div>
-            <div className="text-gray-400 dark:text-gray-400 opacity-40">
+            <div className="pt-4 text-gray-400 dark:text-gray-400 opacity-40">
               <Image
-                src="https://raw.githubusercontent.com/cncf/artwork/master/other/kubernetes-community-days/horizontal/black/kubernetes-community-days-horizontal-black.svg"
+                src="https://raw.githubusercontent.com/cncf/artwork/main/other/kubernetes-community-days/horizontal/black/kcd-logo-black.svg"
                 alt="N"
                 width="136"
                 height="25"
                 className="w-25"
               />
             </div>
-            <div className="text-gray-400 dark:text-gray-400 opacity-40">
+            <div className="pt-2 text-gray-400 dark:text-gray-400 opacity-40">
               <Image
                 src="https://raw.githubusercontent.com/cncf/artwork/master/other/csi/horizontal/black/csi-horizontal-black.svg"
                 alt="N"
@@ -104,7 +104,7 @@ const Hero = () => {
                 className="w-25"
               />
             </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400 opacity-40">
+            <div className="pt-2 text-gray-400 dark:text-gray-400 opacity-40">
               <Image
                 src="https://raw.githubusercontent.com/cncf/artwork/master/other/envoycon/horizontal/black/envoycon-horizontal-black.svg"
                 alt="N"
