@@ -1,6 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Link from 'next/link';
 import React from 'react';
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
+
 class MyDocument extends Document {
   render() {
     return (
@@ -15,6 +17,8 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <GoogleTagManager gtmId="G-YCY1JDM64K" />
+        <GoogleAnalytics gaId="G-YCY1JDM64K" />
       </Html>
     );
   }
