@@ -10,11 +10,17 @@ Para poder desarrollar en el proyecto es necesario tener instalado:
 
 - NodeJS
 - NPM
-- Yarn
 
 ## Desarrollo
 
 Para usar servidor de desarrollo ejecutar el siguiente comando:
+
+```bash
+npm install
+npm run dev
+```
+
+o
 
 ```bash
 make dev
