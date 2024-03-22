@@ -3,11 +3,11 @@
 
 deps:
 	@echo "Instalando dependencias..."
-	@yarn install
+	@npm install
 
 dev: deps
 	@echo "Corriendo el servidor de desarrollo..."
-	@yarn dev
+	@npm run dev
 
 build-image:
 	@echo "Construyendo imagen de docker..."
