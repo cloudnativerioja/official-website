@@ -14,7 +14,7 @@ const Annoucement = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
             </span>
-            KubeFest 2025 - 27 Febrero
+            KubeFest 2025 - 28 Febrero
           </span>
           <span className="font-semibold mr-2 text-left flex-auto">
             1er Evento de Kubernetes en La Rioja
